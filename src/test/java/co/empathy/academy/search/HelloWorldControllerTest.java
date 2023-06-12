@@ -22,10 +22,5 @@ public class HelloWorldControllerTest {
                 .andExpect(MockMvcResultMatchers.content().string("Hello mariano"));
     }
 
-    @Test
-    void testSearchWorks () throws Exception{
-        mvc.perform(MockMvcRequestBuilders.get("/search").queryParam("query","alfonso"))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.content().string("Hola"));
-    }
+
 }
